@@ -25,3 +25,6 @@ cp nomad.service /etc/systemd/system/nomad.service \
 && systemctl enable nomad \
 && systemctl start nomad \
 && systemctl status nomad
+
+# Cleanup
+rm bootstrap.sh bootstrap-internetconnected.sh ca-key.pem client.hcl client.pem client-key.pem nomad.service nomad.zip
